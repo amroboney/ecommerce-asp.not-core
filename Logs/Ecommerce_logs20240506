@@ -1,0 +1,1538 @@
+2024-05-06 07:12:11.653 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7131/api/Address/3fa85f64-5717-4562-b3fc-2c963f66afa6 application/json 68
+2024-05-06 07:12:11.681 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.UpdateItem (EcommerceAPI)'
+2024-05-06 07:12:11.685 +03:00 [INF] Route matched with {action = "UpdateItem", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateItem(System.Guid, EcommerceAPI.Data.Dto.AddressRequestDto) on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:12:11.907 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Addresses] SET [Name] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2024-05-06 07:12:11.915 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'EcommerceAPI.Data.DataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyException(RelationalDataReader reader, Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnly(Int32 commandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__107_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyException(RelationalDataReader reader, Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnly(Int32 commandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__107_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2024-05-06 07:12:11.964 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.UpdateItem (EcommerceAPI) in 278.3242ms
+2024-05-06 07:12:11.964 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.UpdateItem (EcommerceAPI)'
+2024-05-06 07:12:11.976 +03:00 [ERR] 6e2fc065-6bb0-4f3c-bb40-d1b8b2f0359a : The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyException(RelationalDataReader reader, Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnly(Int32 commandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__107_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at EcommerceAPI.Repository.UnitOfWork.Commit() in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Repository/UnitOfWork.cs:line 39
+   at EcommerceAPI.Controllers.AddressController.UpdateItem(Guid id, AddressRequestDto address) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Controllers/AddressController.cs:line 98
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EcommerceAPI.Middleware.ExceprtionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Middleware/ExceprtionHandlerMiddleware.cs:line 22
+2024-05-06 07:12:11.983 +03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7131/api/Address/3fa85f64-5717-4562-b3fc-2c963f66afa6 application/json 68 - 500 - application/json;+charset=utf-8 332.5721ms
+2024-05-06 07:20:48.921 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 07:20:50.294 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 07:20:50.295 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 07:20:50.317 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 07:20:50.317 +03:00 [INF] Hosting environment: Development
+2024-05-06 07:20:50.318 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 07:20:51.700 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 07:20:51.785 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 86.2539ms
+2024-05-06 07:20:51.957 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 07:20:52.032 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 75.4680ms
+2024-05-06 07:20:57.932 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Address - -
+2024-05-06 07:20:57.990 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:20:57.999 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:20:58.906 +03:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+2024-05-06 07:20:58.952 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 07:20:58.961 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 960.1864ms
+2024-05-06 07:20:58.961 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:20:58.964 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Address - - - 200 - application/json;+charset=utf-8 1032.2233ms
+2024-05-06 07:21:15.521 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Address/d067df7f-e474-4571-61c1-08dc6d0110e7 - -
+2024-05-06 07:21:15.525 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItem (EcommerceAPI)'
+2024-05-06 07:21:15.537 +03:00 [INF] Route matched with {action = "GetItem", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItem(System.Guid) on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:21:15.650 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+WHERE [a].[Id] = @__get_Item_0
+2024-05-06 07:21:15.653 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 07:21:15.653 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItem (EcommerceAPI) in 115.8586ms
+2024-05-06 07:21:15.653 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItem (EcommerceAPI)'
+2024-05-06 07:21:15.653 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Address/d067df7f-e474-4571-61c1-08dc6d0110e7 - - - 200 - application/json;+charset=utf-8 131.7257ms
+2024-05-06 07:21:43.367 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7131/api/Address/d067df7f-e474-4571-61c1-08dc6d0110e7 application/json 76
+2024-05-06 07:21:43.371 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.UpdateItem (EcommerceAPI)'
+2024-05-06 07:21:43.376 +03:00 [INF] Route matched with {action = "UpdateItem", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateItem(System.Guid, EcommerceAPI.Data.Dto.AddressRequestDto) on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:21:43.473 +03:00 [INF] Executed DbCommand (37ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Addresses] SET [Name] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2024-05-06 07:21:43.479 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 07:21:43.488 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.UpdateItem (EcommerceAPI) in 112.3787ms
+2024-05-06 07:21:43.488 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.UpdateItem (EcommerceAPI)'
+2024-05-06 07:21:43.489 +03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7131/api/Address/d067df7f-e474-4571-61c1-08dc6d0110e7 application/json 76 - 201 - application/json;+charset=utf-8 121.5105ms
+2024-05-06 07:21:52.466 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7131/api/Address/d067df7f-e474-4571-61c1-08dc6d0110e7 application/json 71
+2024-05-06 07:21:52.467 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.UpdateItem (EcommerceAPI)'
+2024-05-06 07:21:52.467 +03:00 [INF] Route matched with {action = "UpdateItem", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateItem(System.Guid, EcommerceAPI.Data.Dto.AddressRequestDto) on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:21:52.510 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Addresses] SET [Name] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2024-05-06 07:21:52.511 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 07:21:52.512 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.UpdateItem (EcommerceAPI) in 44.537ms
+2024-05-06 07:21:52.512 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.UpdateItem (EcommerceAPI)'
+2024-05-06 07:21:52.512 +03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7131/api/Address/d067df7f-e474-4571-61c1-08dc6d0110e7 application/json 71 - 201 - application/json;+charset=utf-8 46.3334ms
+2024-05-06 07:22:05.442 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7131/api/Address/d067df7f-e474-4571-61c1-08dc6d0110e7 application/json 74
+2024-05-06 07:22:05.443 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.UpdateItem (EcommerceAPI)'
+2024-05-06 07:22:05.443 +03:00 [INF] Route matched with {action = "UpdateItem", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateItem(System.Guid, EcommerceAPI.Data.Dto.AddressRequestDto) on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:22:05.463 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Addresses] SET [Name] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2024-05-06 07:22:05.464 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 07:22:05.465 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.UpdateItem (EcommerceAPI) in 21.1085ms
+2024-05-06 07:22:05.465 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.UpdateItem (EcommerceAPI)'
+2024-05-06 07:22:05.465 +03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7131/api/Address/d067df7f-e474-4571-61c1-08dc6d0110e7 application/json 74 - 201 - application/json;+charset=utf-8 23.5372ms
+2024-05-06 07:22:13.446 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Address - -
+2024-05-06 07:22:13.447 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:22:13.447 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:22:13.476 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+2024-05-06 07:22:13.482 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 07:22:13.482 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 34.9542ms
+2024-05-06 07:22:13.484 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:22:13.486 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Address - - - 200 - application/json;+charset=utf-8 39.4627ms
+2024-05-06 07:22:30.584 +03:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7131/api/Address/d067df7f-e474-4571-61c1-08dc6d0110e7 - 0
+2024-05-06 07:22:30.585 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.DeleteItem (EcommerceAPI)'
+2024-05-06 07:22:30.590 +03:00 [INF] Route matched with {action = "DeleteItem", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteItem(System.Guid) on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:22:30.654 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+WHERE [a].[Id] = @__get_Item_0
+2024-05-06 07:22:30.753 +03:00 [INF] Executed DbCommand (74ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Addresses]
+OUTPUT 1
+WHERE [Id] = @p0;
+2024-05-06 07:22:30.789 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-05-06 07:22:30.789 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.DeleteItem (EcommerceAPI) in 198.3898ms
+2024-05-06 07:22:30.789 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.DeleteItem (EcommerceAPI)'
+2024-05-06 07:22:30.789 +03:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7131/api/Address/d067df7f-e474-4571-61c1-08dc6d0110e7 - 0 - 204 - - 205.1602ms
+2024-05-06 07:22:38.421 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Address/d067df7f-e474-4571-61c1-08dc6d0110e7 - -
+2024-05-06 07:22:38.422 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItem (EcommerceAPI)'
+2024-05-06 07:22:38.422 +03:00 [INF] Route matched with {action = "GetItem", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItem(System.Guid) on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:22:38.429 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+WHERE [a].[Id] = @__get_Item_0
+2024-05-06 07:22:38.440 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 404
+2024-05-06 07:22:38.440 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItem (EcommerceAPI) in 17.7983ms
+2024-05-06 07:22:38.440 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItem (EcommerceAPI)'
+2024-05-06 07:22:38.440 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Address/d067df7f-e474-4571-61c1-08dc6d0110e7 - - - 404 0 - 18.6960ms
+2024-05-06 07:22:51.385 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Address - -
+2024-05-06 07:22:51.387 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:22:51.387 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:22:51.493 +03:00 [INF] Executed DbCommand (57ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+2024-05-06 07:22:51.494 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 07:22:51.495 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 107.6636ms
+2024-05-06 07:22:51.495 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:22:51.495 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Address - - - 200 - application/json;+charset=utf-8 110.7504ms
+2024-05-06 07:25:41.956 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 07:25:42.230 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 07:25:42.232 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 07:25:42.233 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 07:25:42.233 +03:00 [INF] Hosting environment: Development
+2024-05-06 07:25:42.233 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 07:25:43.533 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 07:25:43.614 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 84.4605ms
+2024-05-06 07:25:43.752 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 07:25:43.857 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 104.6722ms
+2024-05-06 07:25:56.623 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Address - -
+2024-05-06 07:25:56.683 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:25:56.690 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:25:57.600 +03:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+2024-05-06 07:25:57.648 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 07:25:57.659 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 966.4817ms
+2024-05-06 07:25:57.660 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:25:57.664 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Address - - - 200 - application/json;+charset=utf-8 1040.9857ms
+2024-05-06 07:26:49.077 +03:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7131/api/Address/57c4f16c-3285-4d88-61c0-08dc6d0110e7 - 0
+2024-05-06 07:26:49.084 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.DeleteItem (EcommerceAPI)'
+2024-05-06 07:26:49.102 +03:00 [INF] Route matched with {action = "DeleteItem", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteItem(System.Guid) on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:26:49.243 +03:00 [INF] Executed DbCommand (45ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+WHERE [a].[Id] = @__get_Item_0
+2024-05-06 07:26:49.310 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Addresses]
+OUTPUT 1
+WHERE [Id] = @p0;
+2024-05-06 07:26:49.316 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 07:26:49.318 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.DeleteItem (EcommerceAPI) in 214.963ms
+2024-05-06 07:26:49.318 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.DeleteItem (EcommerceAPI)'
+2024-05-06 07:26:49.318 +03:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7131/api/Address/57c4f16c-3285-4d88-61c0-08dc6d0110e7 - 0 - 200 - application/json;+charset=utf-8 241.8935ms
+2024-05-06 07:27:03.683 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Address - -
+2024-05-06 07:27:03.686 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:27:03.687 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:27:03.718 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+2024-05-06 07:27:03.720 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 07:27:03.720 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 33.2562ms
+2024-05-06 07:27:03.720 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:27:03.720 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Address - - - 200 - application/json;+charset=utf-8 37.3088ms
+2024-05-06 07:28:21.848 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 07:28:22.155 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 07:28:22.157 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 07:28:22.158 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 07:28:22.158 +03:00 [INF] Hosting environment: Development
+2024-05-06 07:28:22.159 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 07:28:23.410 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 07:28:23.496 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 85.9958ms
+2024-05-06 07:28:23.628 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 07:28:23.713 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 85.5291ms
+2024-05-06 07:28:28.761 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Address - -
+2024-05-06 07:28:28.819 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:28:28.827 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:28:29.722 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+2024-05-06 07:28:29.771 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 07:28:29.781 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 951.5332ms
+2024-05-06 07:28:29.781 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:28:29.785 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Address - - - 200 - application/json;+charset=utf-8 1023.8533ms
+2024-05-06 07:28:40.766 +03:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7131/api/Address/fb2a41fe-c4ab-44e9-61bf-08dc6d0110e7 - 0
+2024-05-06 07:28:40.767 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.DeleteItem (EcommerceAPI)'
+2024-05-06 07:28:40.779 +03:00 [INF] Route matched with {action = "DeleteItem", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteItem(System.Guid) on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:28:40.889 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+WHERE [a].[Id] = @__get_Item_0
+2024-05-06 07:28:40.945 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Addresses]
+OUTPUT 1
+WHERE [Id] = @p0;
+2024-05-06 07:28:40.951 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 07:28:40.951 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.DeleteItem (EcommerceAPI) in 172.232ms
+2024-05-06 07:28:40.951 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.DeleteItem (EcommerceAPI)'
+2024-05-06 07:28:40.951 +03:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7131/api/Address/fb2a41fe-c4ab-44e9-61bf-08dc6d0110e7 - 0 - 200 - application/json;+charset=utf-8 185.7320ms
+2024-05-06 07:33:11.169 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 07:33:11.510 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 07:33:11.511 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 07:33:11.512 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 07:33:11.512 +03:00 [INF] Hosting environment: Development
+2024-05-06 07:33:11.512 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 07:33:12.840 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 07:33:12.940 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 99.0452ms
+2024-05-06 07:33:13.076 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 07:33:13.191 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 114.9100ms
+2024-05-06 07:33:17.347 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Address - -
+2024-05-06 07:33:17.414 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:33:17.423 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:33:18.344 +03:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+2024-05-06 07:33:18.392 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 07:33:18.401 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 976.1975ms
+2024-05-06 07:33:18.401 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:33:18.404 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Address - - - 200 - application/json;+charset=utf-8 1057.0075ms
+2024-05-06 07:34:43.432 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 07:34:43.701 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 07:34:43.727 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 07:34:43.728 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 07:34:43.728 +03:00 [INF] Hosting environment: Development
+2024-05-06 07:34:43.728 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 07:34:44.969 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 07:34:45.072 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 103.2430ms
+2024-05-06 07:34:45.210 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 07:34:45.315 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 105.4636ms
+2024-05-06 07:34:49.750 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Address - -
+2024-05-06 07:34:49.815 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:34:49.823 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:34:50.764 +03:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+2024-05-06 07:34:50.810 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 07:34:50.819 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 993.5862ms
+2024-05-06 07:34:50.820 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:34:50.823 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Address - - - 200 - application/json;+charset=utf-8 1073.6146ms
+2024-05-06 07:37:38.644 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 07:37:38.909 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 07:37:38.910 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 07:37:38.912 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 07:37:38.912 +03:00 [INF] Hosting environment: Development
+2024-05-06 07:37:38.912 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 07:37:40.169 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 07:37:40.279 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 136.2758ms
+2024-05-06 07:37:40.418 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 07:37:40.524 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 106.2236ms
+2024-05-06 07:37:45.124 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Address - -
+2024-05-06 07:37:45.186 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:37:45.193 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:37:46.099 +03:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+2024-05-06 07:37:46.149 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 07:37:46.158 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 963.1778ms
+2024-05-06 07:37:46.159 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:37:46.162 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Address - - - 200 - application/json;+charset=utf-8 1038.4124ms
+2024-05-06 07:41:31.918 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 07:41:32.176 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 07:41:32.177 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 07:41:32.179 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 07:41:32.179 +03:00 [INF] Hosting environment: Development
+2024-05-06 07:41:32.179 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 07:41:33.426 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 07:41:33.511 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 85.4420ms
+2024-05-06 07:41:33.649 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 07:41:33.737 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 88.0886ms
+2024-05-06 07:41:38.541 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Address - -
+2024-05-06 07:41:38.626 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:41:38.633 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:41:45.079 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 6442.4673ms
+2024-05-06 07:41:45.081 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:41:45.094 +03:00 [ERR] e67f57ba-ed2a-4f04-a77b-e0606a9802a9 : Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EcommerceAPI.Controllers.AddressController..ctor(IUnitOfWork unitOfWork, IMapper mapper) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Controllers/AddressController.cs:line 34
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EcommerceAPI.Middleware.ExceprtionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Middleware/ExceprtionHandlerMiddleware.cs:line 22
+2024-05-06 07:41:45.103 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Address - - - 500 - application/json;+charset=utf-8 6561.7912ms
+2024-05-06 07:42:05.150 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 07:42:05.434 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 07:42:05.435 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 07:42:05.436 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 07:42:05.436 +03:00 [INF] Hosting environment: Development
+2024-05-06 07:42:05.436 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 07:42:06.705 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 07:42:06.808 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 107.3048ms
+2024-05-06 07:42:06.942 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 07:42:07.039 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 96.9511ms
+2024-05-06 07:42:10.717 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Address - -
+2024-05-06 07:42:10.781 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:42:10.789 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:42:10.912 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 120.9455ms
+2024-05-06 07:42:10.914 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:42:10.957 +03:00 [ERR] 5a5d1dd8-a3d1-40ad-ac45-830bed588ba1 : Unable to resolve service for type 'Microsoft.AspNetCore.Mvc.ControllerContext' while attempting to activate 'EcommerceAPI.Controllers.AddressController'.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Mvc.ControllerContext' while attempting to activate 'EcommerceAPI.Controllers.AddressController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EcommerceAPI.Middleware.ExceprtionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Middleware/ExceprtionHandlerMiddleware.cs:line 22
+2024-05-06 07:42:10.979 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Address - - - 500 - application/json;+charset=utf-8 262.5957ms
+2024-05-06 07:42:46.126 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 07:42:46.396 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 07:42:46.397 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 07:42:46.400 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 07:42:46.400 +03:00 [INF] Hosting environment: Development
+2024-05-06 07:42:46.400 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 07:42:47.619 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 07:42:47.699 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 81.5907ms
+2024-05-06 07:42:47.835 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 07:42:47.909 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 73.8274ms
+2024-05-06 07:42:51.611 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Address - -
+2024-05-06 07:42:51.668 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:42:51.676 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:42:52.598 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+2024-05-06 07:42:52.644 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 07:42:52.652 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 973.5564ms
+2024-05-06 07:42:52.652 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:42:52.655 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Address - - - 200 - application/json;+charset=utf-8 1044.6702ms
+2024-05-06 07:47:23.961 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 07:47:24.238 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 07:47:24.240 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 07:47:24.242 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 07:47:24.242 +03:00 [INF] Hosting environment: Development
+2024-05-06 07:47:24.242 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 07:47:25.484 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 07:47:25.555 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 73.0681ms
+2024-05-06 07:47:25.687 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 07:47:25.787 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 99.4600ms
+2024-05-06 07:47:30.642 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands - -
+2024-05-06 07:47:30.707 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Reader)
+2024-05-06 07:47:30.710 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-05-06 07:47:30.710 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands - - - 401 0 - 68.0390ms
+2024-05-06 07:47:43.816 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 07:47:44.108 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 07:47:44.132 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 07:47:44.134 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 07:47:44.135 +03:00 [INF] Hosting environment: Development
+2024-05-06 07:47:44.135 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 07:47:45.261 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 07:47:45.328 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 67.5727ms
+2024-05-06 07:47:45.465 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 07:47:45.544 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 78.2846ms
+2024-05-06 07:47:50.813 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands - -
+2024-05-06 07:47:50.874 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 07:47:50.887 +03:00 [INF] Route matched with {action = "Get", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 07:47:51.822 +03:00 [INF] Executed DbCommand (52ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+2024-05-06 07:47:51.920 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI) in 1030.5455ms
+2024-05-06 07:47:51.921 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 07:47:51.986 +03:00 [ERR] c0b28f00-9b59-4085-bcaf-2e78a0850ac9 : Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Brand, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EcommerceAPI.Data.Dto.LkbDto, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Brand, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EcommerceAPI.Data.Dto.LkbDto, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Brand -> LkbDto
+EcommerceAPI.Models.Brand -> EcommerceAPI.Data.Dto.LkbDto
+   at lambda_method63(Closure, Brand, LkbDto, ResolutionContext)
+   at lambda_method62(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method62(Closure, Object, List`1, ResolutionContext)
+   at EcommerceAPI.Controllers.BrandsController.Get() in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Controllers/BrandsController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EcommerceAPI.Middleware.ExceprtionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Middleware/ExceprtionHandlerMiddleware.cs:line 22
+2024-05-06 07:47:52.012 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands - - - 500 - application/json;+charset=utf-8 1198.9533ms
+2024-05-06 07:48:56.340 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 07:48:56.668 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 07:48:56.668 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 07:48:56.670 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 07:48:56.671 +03:00 [INF] Hosting environment: Development
+2024-05-06 07:48:56.671 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 07:48:57.957 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 07:48:58.036 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 82.3452ms
+2024-05-06 07:48:58.167 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 07:48:58.257 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 90.5188ms
+2024-05-06 07:49:04.480 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands - -
+2024-05-06 07:49:04.540 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 07:49:04.548 +03:00 [INF] Route matched with {action = "Get", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 07:49:05.437 +03:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+2024-05-06 07:49:05.533 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI) in 982.4312ms
+2024-05-06 07:49:05.534 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 07:49:05.597 +03:00 [ERR] 48a817ea-1492-4a6f-96e9-c6a3805c146e : Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Brand, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EcommerceAPI.Data.Dto.LkbDto, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Brand, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EcommerceAPI.Data.Dto.LkbDto, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Brand -> LkbDto
+EcommerceAPI.Models.Brand -> EcommerceAPI.Data.Dto.LkbDto
+   at lambda_method63(Closure, Brand, LkbDto, ResolutionContext)
+   at lambda_method62(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method62(Closure, Object, List`1, ResolutionContext)
+   at EcommerceAPI.Controllers.BrandsController.Get() in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Controllers/BrandsController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EcommerceAPI.Middleware.ExceprtionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Middleware/ExceprtionHandlerMiddleware.cs:line 22
+2024-05-06 07:49:05.655 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Serialization and deserialization of 'System.Reflection.MethodBase' instances are not supported. Path: $.Error.TargetSite.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Reflection.MethodBase' instances are not supported.
+   at System.Text.Json.Serialization.Converters.UnsupportedTypeConverter`1.Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, NotSupportedException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](Utf8JsonWriter writer, TValue& value, JsonTypeInfo jsonTypeInfo, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsyncSlow[TValue](Stream body, TValue value, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at EcommerceAPI.Middleware.ExceprtionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Middleware/ExceprtionHandlerMiddleware.cs:line 39
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-06 07:49:05.662 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands - - - 500 - text/plain;+charset=utf-8 1182.4375ms
+2024-05-06 07:49:38.396 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 07:49:38.663 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 07:49:38.663 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 07:49:38.665 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 07:49:38.666 +03:00 [INF] Hosting environment: Development
+2024-05-06 07:49:38.666 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 07:49:39.852 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 07:49:39.940 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 90.0757ms
+2024-05-06 07:49:40.077 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 07:49:40.157 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 79.2293ms
+2024-05-06 07:49:44.415 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands - -
+2024-05-06 07:49:44.501 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 07:49:44.510 +03:00 [INF] Route matched with {action = "Get", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 07:49:45.411 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+2024-05-06 07:49:45.510 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI) in 997.7176ms
+2024-05-06 07:49:45.511 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 07:49:45.575 +03:00 [ERR] 76047c00-d0c7-4342-9d3e-a21e41c4bd44 : Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Brand, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EcommerceAPI.Data.Dto.LkbDto, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Brand, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EcommerceAPI.Data.Dto.LkbDto, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Brand -> LkbDto
+EcommerceAPI.Models.Brand -> EcommerceAPI.Data.Dto.LkbDto
+   at lambda_method63(Closure, Brand, LkbDto, ResolutionContext)
+   at lambda_method62(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method62(Closure, Object, List`1, ResolutionContext)
+   at EcommerceAPI.Controllers.BrandsController.Get() in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Controllers/BrandsController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EcommerceAPI.Middleware.ExceprtionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Middleware/ExceprtionHandlerMiddleware.cs:line 22
+2024-05-06 07:49:45.601 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands - - - 500 - application/json;+charset=utf-8 1185.5078ms
+2024-05-06 07:50:39.777 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 07:50:40.054 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 07:50:40.055 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 07:50:40.056 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 07:50:40.056 +03:00 [INF] Hosting environment: Development
+2024-05-06 07:50:40.056 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 07:50:41.358 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 07:50:41.438 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 80.4320ms
+2024-05-06 07:50:41.569 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 07:50:41.654 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 85.1575ms
+2024-05-06 07:50:46.566 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands - -
+2024-05-06 07:50:46.629 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 07:50:46.636 +03:00 [INF] Route matched with {action = "Get", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 07:50:47.514 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+2024-05-06 07:50:47.559 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 07:50:47.568 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI) in 929.4153ms
+2024-05-06 07:50:47.568 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 07:50:47.572 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands - - - 200 - application/json;+charset=utf-8 1006.1960ms
+2024-05-06 07:51:10.531 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 07:51:11.056 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 07:51:11.056 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 07:51:11.084 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 07:51:11.084 +03:00 [INF] Hosting environment: Development
+2024-05-06 07:51:11.084 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 07:51:12.342 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 07:51:12.422 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 80.1590ms
+2024-05-06 07:51:12.548 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 07:51:12.608 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 59.4952ms
+2024-05-06 07:51:31.149 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 07:51:31.393 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 07:51:31.394 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 07:51:31.396 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 07:51:31.396 +03:00 [INF] Hosting environment: Development
+2024-05-06 07:51:31.396 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 07:51:32.640 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 07:51:32.708 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 68.1814ms
+2024-05-06 07:51:32.839 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 07:51:32.906 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 67.0692ms
+2024-05-06 07:51:37.018 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands - -
+2024-05-06 07:51:37.082 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 07:51:37.090 +03:00 [INF] Route matched with {action = "Get", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 07:51:38.026 +03:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+2024-05-06 07:51:38.130 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI) in 1038.2135ms
+2024-05-06 07:51:38.131 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 07:51:38.202 +03:00 [ERR] 385bff17-dfc7-4c29-9ea4-1145aecd4a04 : Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Brand, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EcommerceAPI.Data.Dto.LkbDto, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Brand, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EcommerceAPI.Data.Dto.LkbDto, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Brand -> LkbDto
+EcommerceAPI.Models.Brand -> EcommerceAPI.Data.Dto.LkbDto
+   at lambda_method63(Closure, Brand, LkbDto, ResolutionContext)
+   at lambda_method62(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method62(Closure, Object, List`1, ResolutionContext)
+   at EcommerceAPI.Controllers.BrandsController.Get() in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Controllers/BrandsController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EcommerceAPI.Middleware.ExceprtionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Middleware/ExceprtionHandlerMiddleware.cs:line 22
+2024-05-06 07:51:38.226 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands - - - 500 - application/json;+charset=utf-8 1208.5479ms
+2024-05-06 07:52:16.612 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 07:52:16.883 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 07:52:16.909 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 07:52:16.913 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 07:52:16.913 +03:00 [INF] Hosting environment: Development
+2024-05-06 07:52:16.913 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 07:52:18.103 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 07:52:18.207 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 104.3458ms
+2024-05-06 07:52:18.343 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 07:52:18.444 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 100.3277ms
+2024-05-06 07:52:24.086 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands - -
+2024-05-06 07:52:24.156 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 07:52:24.164 +03:00 [INF] Route matched with {action = "Get", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 07:52:25.066 +03:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+2024-05-06 07:52:25.165 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI) in 998.8651ms
+2024-05-06 07:52:25.165 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 07:52:25.232 +03:00 [ERR] afca090f-7ec5-4668-a27c-ff9bb93ff6e7 : Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Brand, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EcommerceAPI.Data.Dto.LkbDto, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Brand, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EcommerceAPI.Data.Dto.LkbDto, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Brand -> LkbDto
+EcommerceAPI.Models.Brand -> EcommerceAPI.Data.Dto.LkbDto
+   at lambda_method63(Closure, Brand, LkbDto, ResolutionContext)
+   at lambda_method62(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method62(Closure, Object, List`1, ResolutionContext)
+   at EcommerceAPI.Controllers.BrandsController.Get() in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Controllers/BrandsController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EcommerceAPI.Middleware.ExceprtionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Middleware/ExceprtionHandlerMiddleware.cs:line 22
+2024-05-06 07:52:25.257 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands - - - 500 - application/json;+charset=utf-8 1170.8477ms
+2024-05-06 07:53:53.646 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 07:53:53.917 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 07:53:53.940 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 07:53:53.941 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 07:53:53.941 +03:00 [INF] Hosting environment: Development
+2024-05-06 07:53:53.941 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 07:53:55.183 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 07:53:55.277 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 96.1281ms
+2024-05-06 07:53:55.440 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 07:53:55.524 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 84.2005ms
+2024-05-06 07:54:03.158 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands - -
+2024-05-06 07:54:03.215 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 07:54:03.223 +03:00 [INF] Route matched with {action = "Get", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 07:54:04.119 +03:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+2024-05-06 07:54:04.216 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI) in 990.6722ms
+2024-05-06 07:54:04.217 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 07:54:04.279 +03:00 [ERR] ac55df5f-8e82-476b-b48f-dd494aa4df31 : Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Brand, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EcommerceAPI.Data.Dto.LkbDto, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Brand, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EcommerceAPI.Data.Dto.LkbDto, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Brand -> LkbDto
+EcommerceAPI.Models.Brand -> EcommerceAPI.Data.Dto.LkbDto
+   at lambda_method63(Closure, Brand, LkbDto, ResolutionContext)
+   at lambda_method62(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method62(Closure, Object, List`1, ResolutionContext)
+   at EcommerceAPI.Controllers.BrandsController.Get() in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Controllers/BrandsController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EcommerceAPI.Middleware.ExceprtionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Middleware/ExceprtionHandlerMiddleware.cs:line 22
+2024-05-06 07:54:04.303 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands - - - 500 - application/json;+charset=utf-8 1145.1552ms
+2024-05-06 07:55:35.233 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 07:55:35.500 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 07:55:35.525 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 07:55:35.526 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 07:55:35.526 +03:00 [INF] Hosting environment: Development
+2024-05-06 07:55:35.526 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 07:55:36.727 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 07:55:36.811 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 84.3505ms
+2024-05-06 07:55:36.964 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 07:55:37.069 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 104.5767ms
+2024-05-06 07:55:41.208 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Address - -
+2024-05-06 07:55:41.265 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:55:41.273 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:55:42.155 +03:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+2024-05-06 07:55:42.252 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 977.0504ms
+2024-05-06 07:55:42.253 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:55:42.315 +03:00 [ERR] 86513a7c-cfac-415d-be7c-c1ec93243d1d : Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Address, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EcommerceAPI.Data.Dto.LkbDto, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Address, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EcommerceAPI.Data.Dto.LkbDto, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Address -> LkbDto
+EcommerceAPI.Models.Address -> EcommerceAPI.Data.Dto.LkbDto
+   at lambda_method63(Closure, Address, LkbDto, ResolutionContext)
+   at lambda_method62(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method62(Closure, Object, List`1, ResolutionContext)
+   at EcommerceAPI.Controllers.AddressController.GetItems() in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Controllers/AddressController.cs:line 76
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EcommerceAPI.Middleware.ExceprtionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Middleware/ExceprtionHandlerMiddleware.cs:line 22
+2024-05-06 07:55:42.340 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Address - - - 500 - application/json;+charset=utf-8 1131.8708ms
+2024-05-06 07:58:57.945 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 07:58:58.211 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 07:58:58.213 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 07:58:58.215 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 07:58:58.215 +03:00 [INF] Hosting environment: Development
+2024-05-06 07:58:58.215 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 07:58:59.434 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 07:58:59.507 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 73.2215ms
+2024-05-06 07:58:59.648 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 07:58:59.716 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 68.5844ms
+2024-05-06 07:59:06.543 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Address - -
+2024-05-06 07:59:06.601 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:59:06.609 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 07:59:07.531 +03:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+2024-05-06 07:59:07.633 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 1021.7348ms
+2024-05-06 07:59:07.633 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 07:59:07.698 +03:00 [ERR] e60a4c7c-c3f4-4612-abfc-b47b582f8b2a : Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Address, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EcommerceAPI.Data.Dto.LookupDto, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Address, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EcommerceAPI.Data.Dto.LookupDto, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Address -> LookupDto
+EcommerceAPI.Models.Address -> EcommerceAPI.Data.Dto.LookupDto
+   at lambda_method63(Closure, Address, LookupDto, ResolutionContext)
+   at lambda_method62(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method62(Closure, Object, List`1, ResolutionContext)
+   at EcommerceAPI.Controllers.AddressController.GetItems() in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Controllers/AddressController.cs:line 76
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EcommerceAPI.Middleware.ExceprtionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Middleware/ExceprtionHandlerMiddleware.cs:line 22
+2024-05-06 07:59:07.725 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Address - - - 500 - application/json;+charset=utf-8 1181.2952ms
+2024-05-06 08:00:46.888 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 08:00:47.151 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 08:00:47.152 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 08:00:47.153 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 08:00:47.153 +03:00 [INF] Hosting environment: Development
+2024-05-06 08:00:47.153 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 08:00:48.380 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 08:00:48.471 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 92.7796ms
+2024-05-06 08:00:48.607 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 08:00:48.702 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 95.0520ms
+2024-05-06 08:00:55.297 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Address - -
+2024-05-06 08:00:55.349 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 08:00:55.357 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 08:00:56.327 +03:00 [INF] Executed DbCommand (57ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+2024-05-06 08:00:56.374 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 08:00:56.384 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 1023.8655ms
+2024-05-06 08:00:56.384 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 08:00:56.389 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Address - - - 200 - application/json;+charset=utf-8 1092.4875ms
+2024-05-06 08:01:03.173 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands - -
+2024-05-06 08:01:03.176 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 08:01:03.180 +03:00 [INF] Route matched with {action = "Get", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 08:01:03.223 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+2024-05-06 08:01:03.230 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 08:01:03.231 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI) in 50.8005ms
+2024-05-06 08:01:03.231 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 08:01:03.231 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands - - - 200 - application/json;+charset=utf-8 58.3125ms
+2024-05-06 08:01:06.281 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands - -
+2024-05-06 08:01:06.285 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 08:01:06.285 +03:00 [INF] Route matched with {action = "Get", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 08:01:06.350 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+2024-05-06 08:01:06.376 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 08:01:06.377 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI) in 91.3333ms
+2024-05-06 08:01:06.377 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 08:01:06.377 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands - - - 200 - application/json;+charset=utf-8 95.3557ms
+2024-05-06 08:03:49.295 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 08:03:49.571 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 08:03:49.572 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 08:03:49.574 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 08:03:49.574 +03:00 [INF] Hosting environment: Development
+2024-05-06 08:03:49.574 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 08:03:50.865 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 08:03:50.933 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 68.8793ms
+2024-05-06 08:03:51.074 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 08:03:51.149 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 75.0564ms
+2024-05-06 08:03:56.680 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands - -
+2024-05-06 08:03:56.743 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 08:03:56.753 +03:00 [INF] Route matched with {action = "Get", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 08:03:57.635 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+2024-05-06 08:03:57.682 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 08:03:57.690 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI) in 934.4177ms
+2024-05-06 08:03:57.690 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 08:03:57.693 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands - - - 200 - application/json;+charset=utf-8 1013.3717ms
+2024-05-06 08:04:16.078 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands/b6eca0fd-df2e-43a9-62eb-08dc60a8b1f4 - -
+2024-05-06 08:04:16.156 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Reader)
+2024-05-06 08:04:16.160 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-05-06 08:04:16.161 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands/b6eca0fd-df2e-43a9-62eb-08dc60a8b1f4 - - - 401 0 - 81.9735ms
+2024-05-06 08:04:31.442 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 08:04:31.705 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 08:04:31.707 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 08:04:31.708 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 08:04:31.708 +03:00 [INF] Hosting environment: Development
+2024-05-06 08:04:31.708 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 08:04:32.928 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 08:04:33.012 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 85.3557ms
+2024-05-06 08:04:33.144 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 08:04:33.231 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 87.4062ms
+2024-05-06 08:04:42.437 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands/b6eca0fd-df2e-43a9-62eb-08dc60a8b1f4 - -
+2024-05-06 08:04:42.503 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 08:04:42.514 +03:00 [INF] Route matched with {action = "Get", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 08:04:43.519 +03:00 [INF] Executed DbCommand (69ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+WHERE [b].[Id] = @__get_Item_0
+2024-05-06 08:04:43.565 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 08:04:43.572 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI) in 1055.9257ms
+2024-05-06 08:04:43.573 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.Get (EcommerceAPI)'
+2024-05-06 08:04:43.576 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands/b6eca0fd-df2e-43a9-62eb-08dc60a8b1f4 - - - 200 - application/json;+charset=utf-8 1139.2485ms
+2024-05-06 08:07:40.139 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 08:07:40.398 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 08:07:40.400 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 08:07:40.400 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 08:07:40.401 +03:00 [INF] Hosting environment: Development
+2024-05-06 08:07:40.401 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 08:07:41.597 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 08:07:41.682 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 87.2321ms
+2024-05-06 08:07:41.815 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 08:07:41.915 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 99.7052ms
+2024-05-06 08:07:59.733 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7131/api/Brands application/json 23
+2024-05-06 08:07:59.789 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.Post (EcommerceAPI)'
+2024-05-06 08:07:59.802 +03:00 [INF] Route matched with {action = "Post", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EcommerceAPI.Data.Dto.CreateBrandDto) on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 08:08:00.006 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.Post (EcommerceAPI) in 201.7323ms
+2024-05-06 08:08:00.008 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.Post (EcommerceAPI)'
+2024-05-06 08:08:00.024 +03:00 [ERR] 443f829a-f6fc-41c3-b100-046f9caa5ea3 : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateBrandDto -> Brand
+EcommerceAPI.Data.Dto.CreateBrandDto -> EcommerceAPI.Models.Brand
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateBrandDto -> Brand
+EcommerceAPI.Data.Dto.CreateBrandDto -> EcommerceAPI.Models.Brand
+   at lambda_method24(Closure, Object, Brand, ResolutionContext)
+   at EcommerceAPI.Controllers.BrandsController.Post(CreateBrandDto brandCreate) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Controllers/BrandsController.cs:line 81
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EcommerceAPI.Middleware.ExceprtionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Middleware/ExceprtionHandlerMiddleware.cs:line 22
+2024-05-06 08:08:00.085 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7131/api/Brands application/json 23 - 500 - application/json;+charset=utf-8 352.2467ms
+2024-05-06 08:10:18.240 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands - -
+2024-05-06 08:10:18.247 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI)'
+2024-05-06 08:10:18.256 +03:00 [INF] Route matched with {action = "GetItems", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 08:10:19.029 +03:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+2024-05-06 08:10:19.070 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 08:10:19.074 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI) in 817.8875ms
+2024-05-06 08:10:19.074 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI)'
+2024-05-06 08:10:19.077 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands - - - 200 - application/json;+charset=utf-8 837.1882ms
+2024-05-06 08:11:04.830 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 08:11:05.124 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 08:11:05.150 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 08:11:05.151 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 08:11:05.151 +03:00 [INF] Hosting environment: Development
+2024-05-06 08:11:05.151 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 08:11:06.360 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 08:11:06.458 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 99.1243ms
+2024-05-06 08:11:06.622 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 08:11:06.715 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 93.0257ms
+2024-05-06 08:11:20.405 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7131/api/Brands application/json 23
+2024-05-06 08:11:20.469 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.Post (EcommerceAPI)'
+2024-05-06 08:11:20.480 +03:00 [INF] Route matched with {action = "Post", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EcommerceAPI.Data.Dto.CreateBrandDto) on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 08:11:20.682 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.Post (EcommerceAPI) in 200.4016ms
+2024-05-06 08:11:20.684 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.Post (EcommerceAPI)'
+2024-05-06 08:11:20.697 +03:00 [ERR] b4e44ddf-d05b-4f27-8cd8-156b4051a214 : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateBrandDto -> Brand
+EcommerceAPI.Data.Dto.CreateBrandDto -> EcommerceAPI.Models.Brand
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateBrandDto -> Brand
+EcommerceAPI.Data.Dto.CreateBrandDto -> EcommerceAPI.Models.Brand
+   at lambda_method24(Closure, Object, Brand, ResolutionContext)
+   at EcommerceAPI.Controllers.BrandsController.Post(CreateBrandDto brandCreate) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Controllers/BrandsController.cs:line 81
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EcommerceAPI.Middleware.ExceprtionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Middleware/ExceprtionHandlerMiddleware.cs:line 22
+2024-05-06 08:11:20.719 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7131/api/Brands application/json 23 - 500 - application/json;+charset=utf-8 313.5895ms
+2024-05-06 08:12:16.639 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 08:12:16.906 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 08:12:16.908 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 08:12:16.909 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 08:12:16.909 +03:00 [INF] Hosting environment: Development
+2024-05-06 08:12:16.910 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 08:12:18.091 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 08:12:18.161 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 68.9252ms
+2024-05-06 08:12:18.299 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 08:12:18.379 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 79.4014ms
+2024-05-06 08:12:29.599 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7131/api/Brands application/json 23
+2024-05-06 08:12:29.658 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.Post (EcommerceAPI)'
+2024-05-06 08:12:29.668 +03:00 [INF] Route matched with {action = "Post", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EcommerceAPI.Data.Dto.CreateBrandDto) on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 08:12:30.560 +03:00 [INF] Executed DbCommand (54ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Brands] ([Id], [Name])
+VALUES (@p0, @p1);
+2024-05-06 08:12:30.575 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 08:12:30.591 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.Post (EcommerceAPI) in 921.1255ms
+2024-05-06 08:12:30.592 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.Post (EcommerceAPI)'
+2024-05-06 08:12:30.594 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7131/api/Brands application/json 23 - 201 - application/json;+charset=utf-8 995.4599ms
+2024-05-06 08:24:15.511 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 08:24:15.767 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 08:24:15.793 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 08:24:15.796 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 08:24:15.797 +03:00 [INF] Hosting environment: Development
+2024-05-06 08:24:15.797 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 08:24:17.135 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 08:24:17.206 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 72.6222ms
+2024-05-06 08:24:17.360 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 08:24:17.455 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 95.0184ms
+2024-05-06 08:24:27.085 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7131/api/Brands application/json 20
+2024-05-06 08:24:27.140 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.Post (EcommerceAPI)'
+2024-05-06 08:24:27.151 +03:00 [INF] Route matched with {action = "Post", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EcommerceAPI.Data.Dto.CreateBrandDto) on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 08:24:28.058 +03:00 [INF] Executed DbCommand (41ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Brands] ([Id], [Name])
+VALUES (@p0, @p1);
+2024-05-06 08:24:28.075 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 08:24:28.091 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.Post (EcommerceAPI) in 937.6623ms
+2024-05-06 08:24:28.091 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.Post (EcommerceAPI)'
+2024-05-06 08:24:28.093 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7131/api/Brands application/json 20 - 201 - application/json;+charset=utf-8 1007.9489ms
+2024-05-06 08:28:21.136 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 08:28:21.395 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 08:28:21.396 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 08:28:21.397 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 08:28:21.397 +03:00 [INF] Hosting environment: Development
+2024-05-06 08:28:21.397 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 08:28:22.650 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 08:28:22.738 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 88.9975ms
+2024-05-06 08:28:22.882 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 08:28:22.988 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 106.5857ms
+2024-05-06 08:28:31.230 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands - -
+2024-05-06 08:28:31.289 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI)'
+2024-05-06 08:28:31.298 +03:00 [INF] Route matched with {action = "GetItems", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 08:28:32.272 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+2024-05-06 08:28:32.330 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 08:28:32.339 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI) in 1039.108ms
+2024-05-06 08:28:32.340 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI)'
+2024-05-06 08:28:32.344 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands - - - 200 - application/json;+charset=utf-8 1114.4886ms
+2024-05-06 08:28:48.111 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands/b6eca0fd-df2e-43a9-62eb-08dc60a8b1f4 - -
+2024-05-06 08:28:48.122 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.GetItem (EcommerceAPI)'
+2024-05-06 08:28:48.133 +03:00 [INF] Route matched with {action = "GetItem", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItem(System.Guid) on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 08:28:48.247 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+WHERE [b].[Id] = @__get_Item_0
+2024-05-06 08:28:48.250 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 08:28:48.250 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.GetItem (EcommerceAPI) in 117.1096ms
+2024-05-06 08:28:48.250 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.GetItem (EcommerceAPI)'
+2024-05-06 08:28:48.250 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands/b6eca0fd-df2e-43a9-62eb-08dc60a8b1f4 - - - 200 - application/json;+charset=utf-8 139.3719ms
+2024-05-06 08:29:05.692 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7131/api/Brands/b6eca0fd-df2e-43a9-62eb-08dc60a8b1f4 application/json 69
+2024-05-06 08:29:05.707 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.Put (EcommerceAPI)'
+2024-05-06 08:29:05.715 +03:00 [INF] Route matched with {action = "Put", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(System.Guid, EcommerceAPI.Data.Dto.BrandDto) on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 08:29:05.798 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Brands] SET [Name] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2024-05-06 08:29:05.804 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 08:29:05.814 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.Put (EcommerceAPI) in 98.9736ms
+2024-05-06 08:29:05.814 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.Put (EcommerceAPI)'
+2024-05-06 08:29:05.814 +03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7131/api/Brands/b6eca0fd-df2e-43a9-62eb-08dc60a8b1f4 application/json 69 - 201 - application/json;+charset=utf-8 122.9501ms
+2024-05-06 08:29:18.478 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands - -
+2024-05-06 08:29:18.479 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI)'
+2024-05-06 08:29:18.479 +03:00 [INF] Route matched with {action = "GetItems", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 08:29:18.511 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+2024-05-06 08:29:18.514 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 08:29:18.514 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI) in 34.7678ms
+2024-05-06 08:29:18.514 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI)'
+2024-05-06 08:29:18.514 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands - - - 200 - application/json;+charset=utf-8 36.6086ms
+2024-05-06 08:30:41.840 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 08:30:42.124 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 08:30:42.150 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 08:30:42.151 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 08:30:42.151 +03:00 [INF] Hosting environment: Development
+2024-05-06 08:30:42.151 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 08:30:43.384 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 08:30:43.473 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 89.8449ms
+2024-05-06 08:30:43.607 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 08:30:43.721 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 113.7746ms
+2024-05-06 08:30:51.367 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands - -
+2024-05-06 08:30:51.424 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI)'
+2024-05-06 08:30:51.433 +03:00 [INF] Route matched with {action = "GetItems", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 08:30:52.340 +03:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+2024-05-06 08:30:52.387 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 08:30:52.395 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI) in 960.5627ms
+2024-05-06 08:30:52.396 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI)'
+2024-05-06 08:30:52.399 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands - - - 200 - application/json;+charset=utf-8 1032.0201ms
+2024-05-06 08:31:05.385 +03:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7131/api/Brands/dbc89f8b-6a6d-4165-49d7-08dc60dd390b - 0
+2024-05-06 08:31:05.388 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.Delete (EcommerceAPI)'
+2024-05-06 08:31:05.402 +03:00 [INF] Route matched with {action = "Delete", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid) on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 08:31:05.508 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+WHERE [b].[Id] = @__get_Item_0
+2024-05-06 08:31:05.590 +03:00 [INF] Executed DbCommand (42ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Brands]
+OUTPUT 1
+WHERE [Id] = @p0;
+2024-05-06 08:31:05.654 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.Delete (EcommerceAPI) in 252.271ms
+2024-05-06 08:31:05.655 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.Delete (EcommerceAPI)'
+2024-05-06 08:31:05.720 +03:00 [ERR] 052f387c-d212-4fe0-929e-ce29d48645b4 : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Brand -> AddressRequestDto
+EcommerceAPI.Models.Brand -> EcommerceAPI.Data.Dto.AddressRequestDto
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Brand -> AddressRequestDto
+EcommerceAPI.Models.Brand -> EcommerceAPI.Data.Dto.AddressRequestDto
+   at lambda_method85(Closure, Object, AddressRequestDto, ResolutionContext)
+   at EcommerceAPI.Controllers.BrandsController.Delete(Guid id) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Controllers/BrandsController.cs:line 131
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EcommerceAPI.Middleware.ExceprtionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Middleware/ExceprtionHandlerMiddleware.cs:line 22
+2024-05-06 08:31:05.737 +03:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7131/api/Brands/dbc89f8b-6a6d-4165-49d7-08dc60dd390b - 0 - 500 - application/json;+charset=utf-8 352.5351ms
+2024-05-06 08:31:32.046 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 08:31:32.362 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 08:31:32.363 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 08:31:32.364 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 08:31:32.365 +03:00 [INF] Hosting environment: Development
+2024-05-06 08:31:32.366 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 08:31:33.614 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 08:31:33.695 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 81.4100ms
+2024-05-06 08:31:33.831 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 08:31:33.921 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 89.9994ms
+2024-05-06 08:31:41.003 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands - -
+2024-05-06 08:31:41.054 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI)'
+2024-05-06 08:31:41.063 +03:00 [INF] Route matched with {action = "GetItems", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 08:31:41.971 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+2024-05-06 08:31:42.019 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 08:31:42.027 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI) in 961.9428ms
+2024-05-06 08:31:42.028 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI)'
+2024-05-06 08:31:42.031 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands - - - 200 - application/json;+charset=utf-8 1028.6298ms
+2024-05-06 08:31:53.172 +03:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7131/api/Brands/e4efc1d9-5998-4b93-16e3-08dc6d8cccba - 0
+2024-05-06 08:31:53.175 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.Delete (EcommerceAPI)'
+2024-05-06 08:31:53.189 +03:00 [INF] Route matched with {action = "Delete", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid) on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 08:31:53.320 +03:00 [INF] Executed DbCommand (43ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+WHERE [b].[Id] = @__get_Item_0
+2024-05-06 08:31:53.395 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Brands]
+OUTPUT 1
+WHERE [Id] = @p0;
+2024-05-06 08:31:53.401 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 08:31:53.401 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.Delete (EcommerceAPI) in 212.4281ms
+2024-05-06 08:31:53.401 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.Delete (EcommerceAPI)'
+2024-05-06 08:31:53.401 +03:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7131/api/Brands/e4efc1d9-5998-4b93-16e3-08dc6d8cccba - 0 - 200 - application/json;+charset=utf-8 229.2097ms
+2024-05-06 08:31:58.555 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands - -
+2024-05-06 08:31:58.559 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI)'
+2024-05-06 08:31:58.559 +03:00 [INF] Route matched with {action = "GetItems", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 08:31:58.629 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+2024-05-06 08:31:58.630 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 08:31:58.631 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI) in 71.6763ms
+2024-05-06 08:31:58.631 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI)'
+2024-05-06 08:31:58.631 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands - - - 200 - application/json;+charset=utf-8 76.9082ms
+2024-05-06 21:01:52.769 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 21:01:53.104 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 21:01:53.104 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 21:01:53.107 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 21:01:53.107 +03:00 [INF] Hosting environment: Development
+2024-05-06 21:01:53.107 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 21:01:54.612 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 21:01:54.723 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 111.6821ms
+2024-05-06 21:01:54.935 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 21:01:55.046 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 110.8918ms
+2024-05-06 21:02:04.331 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Address - -
+2024-05-06 21:02:04.395 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 21:02:04.405 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-06 21:02:05.379 +03:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+2024-05-06 21:02:05.426 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 21:02:05.434 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 1026.9617ms
+2024-05-06 21:02:05.435 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-06 21:02:05.439 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Address - - - 200 - application/json;+charset=utf-8 1108.5546ms
+2024-05-06 21:02:20.918 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands - -
+2024-05-06 21:02:20.921 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI)'
+2024-05-06 21:02:20.925 +03:00 [INF] Route matched with {action = "GetItems", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 21:02:20.970 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+2024-05-06 21:02:20.977 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 21:02:20.977 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI) in 51.8098ms
+2024-05-06 21:02:20.978 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI)'
+2024-05-06 21:02:20.978 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands - - - 200 - application/json;+charset=utf-8 59.2659ms
+2024-05-06 21:02:53.317 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7131/api/Brands application/json 20
+2024-05-06 21:02:53.324 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.Post (EcommerceAPI)'
+2024-05-06 21:02:53.335 +03:00 [INF] Route matched with {action = "Post", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EcommerceAPI.Data.Dto.CreateBrandDto) on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 21:02:53.468 +03:00 [INF] Executed DbCommand (47ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Brands] ([Id], [Name])
+VALUES (@p0, @p1);
+2024-05-06 21:02:53.473 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 21:02:53.484 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.Post (EcommerceAPI) in 149.2174ms
+2024-05-06 21:02:53.484 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.Post (EcommerceAPI)'
+2024-05-06 21:02:53.484 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7131/api/Brands application/json 20 - 201 - application/json;+charset=utf-8 167.4833ms
+2024-05-06 21:03:04.397 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Brands - -
+2024-05-06 21:03:04.398 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI)'
+2024-05-06 21:03:04.398 +03:00 [INF] Route matched with {action = "GetItems", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.BrandsController (EcommerceAPI).
+2024-05-06 21:03:04.440 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Name]
+FROM [Brands] AS [b]
+2024-05-06 21:03:04.465 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 21:03:04.465 +03:00 [INF] Executed action EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI) in 65.9732ms
+2024-05-06 21:03:04.465 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.BrandsController.GetItems (EcommerceAPI)'
+2024-05-06 21:03:04.465 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Brands - - - 200 - application/json;+charset=utf-8 68.0221ms
+2024-05-06 21:04:02.111 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Category - -
+2024-05-06 21:04:02.113 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.CategoryController.Get (EcommerceAPI)'
+2024-05-06 21:04:02.119 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller EcommerceAPI.Controllers.CategoryController (EcommerceAPI).
+2024-05-06 21:04:02.225 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Image], [c].[Name], [c].[Status]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id]
+2024-05-06 21:04:02.233 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 21:04:02.237 +03:00 [INF] Executed action EcommerceAPI.Controllers.CategoryController.Get (EcommerceAPI) in 117.4567ms
+2024-05-06 21:04:02.237 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.CategoryController.Get (EcommerceAPI)'
+2024-05-06 21:04:02.238 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Category - - - 200 - application/json;+charset=utf-8 127.6675ms
+2024-05-06 21:30:34.640 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 21:30:34.967 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 21:30:34.967 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 21:30:34.969 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 21:30:34.969 +03:00 [INF] Hosting environment: Development
+2024-05-06 21:30:34.969 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 21:30:36.281 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 21:30:36.368 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 88.4620ms
+2024-05-06 21:30:36.508 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 21:30:36.621 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 113.4152ms
+2024-05-06 21:30:47.723 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Category/Active - -
+2024-05-06 21:30:47.786 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.CategoryController.GetActive (EcommerceAPI)'
+2024-05-06 21:30:47.790 +03:00 [INF] Route matched with {action = "GetActive", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetActive() on controller EcommerceAPI.Controllers.CategoryController (EcommerceAPI).
+2024-05-06 21:30:48.906 +03:00 [INF] Executed DbCommand (190ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Image], [c].[Name], [c].[Status]
+FROM [Categories] AS [c]
+WHERE [c].[Status] = CAST(1 AS bit)
+2024-05-06 21:30:57.989 +03:00 [INF] Executed action EcommerceAPI.Controllers.CategoryController.GetActive (EcommerceAPI) in 10195.6881ms
+2024-05-06 21:30:57.990 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.CategoryController.GetActive (EcommerceAPI)'
+2024-05-06 21:30:58.005 +03:00 [ERR] 687f40e8-b904-45ee-9f91-ed03312dd32c : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> CategoryDto
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Category, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> EcommerceAPI.Data.Dto.CategoryDto
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> CategoryDto
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Category, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> EcommerceAPI.Data.Dto.CategoryDto
+   at lambda_method37(Closure, Object, CategoryDto, ResolutionContext)
+   at EcommerceAPI.Controllers.CategoryController.GetActive() in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Controllers/CategoryController.cs:line 71
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EcommerceAPI.Middleware.ExceprtionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Middleware/ExceprtionHandlerMiddleware.cs:line 22
+2024-05-06 21:30:58.022 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Category/Active - - - 500 - application/json;+charset=utf-8 10298.7139ms
+2024-05-06 21:31:51.526 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 21:31:51.803 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 21:31:51.804 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 21:31:51.806 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 21:31:51.806 +03:00 [INF] Hosting environment: Development
+2024-05-06 21:31:51.806 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 21:31:53.067 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 21:31:53.157 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 91.7535ms
+2024-05-06 21:31:53.290 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 21:31:53.414 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 123.1069ms
+2024-05-06 21:31:58.990 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Category/Active - -
+2024-05-06 21:31:59.047 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.CategoryController.GetActive (EcommerceAPI)'
+2024-05-06 21:31:59.052 +03:00 [INF] Route matched with {action = "GetActive", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetActive() on controller EcommerceAPI.Controllers.CategoryController (EcommerceAPI).
+2024-05-06 21:32:00.008 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Image], [c].[Name], [c].[Status]
+FROM [Categories] AS [c]
+WHERE [c].[Status] = CAST(1 AS bit)
+2024-05-06 21:33:52.999 +03:00 [INF] Executed action EcommerceAPI.Controllers.CategoryController.GetActive (EcommerceAPI) in 113943.5325ms
+2024-05-06 21:33:53.002 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.CategoryController.GetActive (EcommerceAPI)'
+2024-05-06 21:33:53.021 +03:00 [ERR] 08f25cea-c01d-4a15-9f28-d224900dd014 : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> CategoryDto
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Category, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> EcommerceAPI.Data.Dto.CategoryDto
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> CategoryDto
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Category, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> EcommerceAPI.Data.Dto.CategoryDto
+   at lambda_method37(Closure, Object, CategoryDto, ResolutionContext)
+   at EcommerceAPI.Controllers.CategoryController.GetActive() in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Controllers/CategoryController.cs:line 63
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EcommerceAPI.Middleware.ExceprtionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Middleware/ExceprtionHandlerMiddleware.cs:line 22
+2024-05-06 21:33:53.052 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Category/Active - - - 500 - application/json;+charset=utf-8 114062.4769ms
+2024-05-06 21:34:09.920 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 21:34:10.189 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 21:34:10.189 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 21:34:10.190 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 21:34:10.190 +03:00 [INF] Hosting environment: Development
+2024-05-06 21:34:10.190 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 21:34:11.443 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 21:34:11.542 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 101.1459ms
+2024-05-06 21:34:11.684 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 21:34:11.786 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 102.4804ms
+2024-05-06 21:34:16.472 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Category/Active - -
+2024-05-06 21:34:16.526 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.CategoryController.GetActive (EcommerceAPI)'
+2024-05-06 21:34:16.531 +03:00 [INF] Route matched with {action = "GetActive", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetActive() on controller EcommerceAPI.Controllers.CategoryController (EcommerceAPI).
+2024-05-06 21:34:17.470 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Image], [c].[Name], [c].[Status]
+FROM [Categories] AS [c]
+WHERE [c].[Status] = CAST(1 AS bit)
+2024-05-06 21:34:17.491 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 21:34:17.500 +03:00 [INF] Executed action EcommerceAPI.Controllers.CategoryController.GetActive (EcommerceAPI) in 965.6482ms
+2024-05-06 21:34:17.500 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.CategoryController.GetActive (EcommerceAPI)'
+2024-05-06 21:34:17.503 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Category/Active - - - 200 - application/json;+charset=utf-8 1031.5461ms
+2024-05-06 21:37:41.103 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Category/Active - -
+2024-05-06 21:37:41.114 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.CategoryController.GetActive (EcommerceAPI)'
+2024-05-06 21:37:41.116 +03:00 [INF] Route matched with {action = "GetActive", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetActive() on controller EcommerceAPI.Controllers.CategoryController (EcommerceAPI).
+2024-05-06 21:37:41.205 +03:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Image], [c].[Name], [c].[Status]
+FROM [Categories] AS [c]
+WHERE [c].[Status] = CAST(1 AS bit)
+2024-05-06 21:44:08.131 +03:00 [INF] Executed action EcommerceAPI.Controllers.CategoryController.GetActive (EcommerceAPI) in 387016.4862ms
+2024-05-06 21:44:08.133 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.CategoryController.GetActive (EcommerceAPI)'
+2024-05-06 21:44:08.150 +03:00 [ERR] 7049194b-1bdc-499e-b668-67295952f347 : Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Category, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EcommerceAPI.Data.Dto.CategoryDto, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EcommerceAPI.Models.Category, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EcommerceAPI.Data.Dto.CategoryDto, EcommerceAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Category -> CategoryDto
+EcommerceAPI.Models.Category -> EcommerceAPI.Data.Dto.CategoryDto
+   at lambda_method67(Closure, Category, CategoryDto, ResolutionContext)
+   at lambda_method37(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method37(Closure, Object, List`1, ResolutionContext)
+   at EcommerceAPI.Controllers.CategoryController.GetActive() in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Controllers/CategoryController.cs:line 63
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EcommerceAPI.Middleware.ExceprtionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in /Users/amroboney/Projects/Ecommerce/EcommerceAPI/Middleware/ExceprtionHandlerMiddleware.cs:line 22
+2024-05-06 21:44:08.162 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Category/Active - - - 500 - application/json;+charset=utf-8 387061.1582ms
+2024-05-06 21:52:24.389 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-06 21:52:24.717 +03:00 [INF] Now listening on: https://localhost:7131
+2024-05-06 21:52:24.718 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-06 21:52:24.720 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 21:52:24.720 +03:00 [INF] Hosting environment: Development
+2024-05-06 21:52:24.720 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-06 21:52:26.051 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/index.html - -
+2024-05-06 21:52:26.155 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/index.html - - - 200 - text/html;charset=utf-8 103.6416ms
+2024-05-06 21:52:26.290 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - -
+2024-05-06 21:52:26.410 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 119.9857ms
+2024-05-06 21:52:32.395 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7131/api/Category/Active - -
+2024-05-06 21:52:32.444 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.CategoryController.GetActive (EcommerceAPI)'
+2024-05-06 21:52:32.449 +03:00 [INF] Route matched with {action = "GetActive", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetActive() on controller EcommerceAPI.Controllers.CategoryController (EcommerceAPI).
+2024-05-06 21:52:33.465 +03:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Image], [c].[Name], [c].[Status]
+FROM [Categories] AS [c]
+WHERE [c].[Status] = CAST(1 AS bit)
+2024-05-06 21:52:33.518 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-06 21:52:33.527 +03:00 [INF] Executed action EcommerceAPI.Controllers.CategoryController.GetActive (EcommerceAPI) in 1076.0492ms
+2024-05-06 21:52:33.528 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.CategoryController.GetActive (EcommerceAPI)'
+2024-05-06 21:52:33.531 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7131/api/Category/Active - - - 200 - application/json;+charset=utf-8 1136.1910ms

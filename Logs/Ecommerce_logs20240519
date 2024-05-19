@@ -1,0 +1,647 @@
+2024-05-19 04:31:57.934 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5555/swagger/index.html - -
+2024-05-19 04:31:57.971 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5555/swagger/index.html - - - 200 - text/html;charset=utf-8 39.4610ms
+2024-05-19 04:31:58.130 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5555/swagger/v1/swagger.json - -
+2024-05-19 04:31:58.164 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5555/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 34.2176ms
+2024-05-19 04:31:59.443 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5555/swagger/index.html - -
+2024-05-19 04:31:59.443 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5555/swagger/index.html - - - 200 - text/html;charset=utf-8 0.4647ms
+2024-05-19 04:31:59.486 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5555/swagger/v1/swagger.json - -
+2024-05-19 04:31:59.496 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5555/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 10.0099ms
+2024-05-19 04:45:18.685 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-19 04:45:18.749 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-19 04:45:18.749 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-19 04:45:18.749 +03:00 [INF] Hosting environment: Development
+2024-05-19 04:45:18.749 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-19 04:45:21.508 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/ - -
+2024-05-19 04:45:21.528 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-05-19 04:45:21.571 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/ - - - 404 0 - 64.9202ms
+2024-05-19 04:45:21.722 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/favicon.ico - -
+2024-05-19 04:45:21.723 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/favicon.ico - - - 404 0 - 1.1746ms
+2024-05-19 04:45:35.541 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/index.html - -
+2024-05-19 04:45:35.602 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/index.html - - - 200 - text/html;charset=utf-8 60.5663ms
+2024-05-19 04:45:35.609 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui.css - -
+2024-05-19 04:45:35.612 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-bundle.js - -
+2024-05-19 04:45:35.612 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-standalone-preset.js - -
+2024-05-19 04:45:35.622 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-05-19 04:45:35.622 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-05-19 04:45:35.622 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui.css - - - 200 144929 text/css 13.0877ms
+2024-05-19 04:45:35.622 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 10.5266ms
+2024-05-19 04:45:35.624 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-05-19 04:45:35.624 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 12.6623ms
+2024-05-19 04:45:35.738 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - -
+2024-05-19 04:45:35.743 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/favicon-16x16.png - -
+2024-05-19 04:45:35.743 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/favicon-32x32.png - -
+2024-05-19 04:45:35.743 +03:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2024-05-19 04:45:35.743 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-05-19 04:45:35.743 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/favicon-16x16.png - - - 200 665 image/png 0.4080ms
+2024-05-19 04:45:35.744 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/favicon-32x32.png - - - 200 628 image/png 0.6530ms
+2024-05-19 04:45:35.809 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 70.9432ms
+2024-05-19 04:45:40.529 +03:00 [INF] Application is shutting down...
+2024-05-19 04:51:51.097 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-19 04:51:51.177 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-19 04:51:51.178 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-19 04:51:51.178 +03:00 [INF] Hosting environment: Development
+2024-05-19 04:51:51.178 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-19 04:51:51.394 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger - -
+2024-05-19 04:51:51.420 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger - - - 301 0 - 26.9452ms
+2024-05-19 04:51:51.427 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/index.html - -
+2024-05-19 04:51:51.466 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/index.html - - - 200 - text/html;charset=utf-8 38.7308ms
+2024-05-19 04:51:51.595 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - -
+2024-05-19 04:51:51.663 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 67.9437ms
+2024-05-19 04:51:58.432 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/api/Address - -
+2024-05-19 04:51:58.446 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-05-19 04:51:58.495 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-19 04:51:58.504 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-19 04:52:27.208 +03:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+2024-05-19 04:52:27.253 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-19 04:52:27.261 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 28754.6945ms
+2024-05-19 04:52:27.262 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-19 04:52:27.265 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/api/Address - - - 200 - application/json;+charset=utf-8 28832.7824ms
+2024-05-19 04:53:18.260 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-19 04:53:18.328 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-19 04:53:18.329 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-19 04:53:18.329 +03:00 [INF] Hosting environment: Development
+2024-05-19 04:53:18.329 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-19 04:53:18.555 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/index.html - -
+2024-05-19 04:53:18.618 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/index.html - - - 200 - text/html;charset=utf-8 64.1033ms
+2024-05-19 04:53:18.743 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - -
+2024-05-19 04:53:18.830 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 87.0092ms
+2024-05-19 04:53:22.840 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/api/Address - -
+2024-05-19 04:53:22.856 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-05-19 04:53:22.893 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-19 04:53:22.902 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-19 04:53:36.935 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+2024-05-19 04:58:21.110 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-19 04:58:21.176 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-19 04:58:21.176 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-19 04:58:21.176 +03:00 [INF] Hosting environment: Development
+2024-05-19 04:58:21.176 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-19 04:58:21.471 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/index.html - -
+2024-05-19 04:58:21.544 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/index.html - - - 200 - text/html;charset=utf-8 73.1908ms
+2024-05-19 04:58:21.631 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/_framework/aspnetcore-browser-refresh.js - -
+2024-05-19 04:58:21.632 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/_framework/aspnetcore-browser-refresh.js - - - 200 13732 application/javascript;+charset=utf-8 0.9773ms
+2024-05-19 04:58:21.659 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - -
+2024-05-19 04:58:21.728 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 69.5750ms
+2024-05-19 04:58:28.902 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/api/Address - -
+2024-05-19 04:58:28.909 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-05-19 04:58:28.938 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-19 04:58:28.946 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-19 04:58:29.743 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+2024-05-19 04:58:29.782 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-19 04:58:29.788 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 840.8549ms
+2024-05-19 04:58:29.789 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-19 04:58:29.792 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/api/Address - - - 200 - application/json;+charset=utf-8 889.8776ms
+2024-05-19 04:59:00.806 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/index.html - -
+2024-05-19 04:59:00.810 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/index.html - - - 200 - text/html;charset=utf-8 3.7245ms
+2024-05-19 04:59:00.823 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/_framework/aspnetcore-browser-refresh.js - -
+2024-05-19 04:59:00.823 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/_framework/aspnetcore-browser-refresh.js - - - 200 13732 application/javascript;+charset=utf-8 0.2465ms
+2024-05-19 04:59:00.826 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-standalone-preset.js - -
+2024-05-19 04:59:00.826 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui.css - -
+2024-05-19 04:59:00.826 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-bundle.js - -
+2024-05-19 04:59:00.828 +03:00 [INF] The file /swagger-ui-bundle.js was not modified
+2024-05-19 04:59:00.828 +03:00 [INF] The file /swagger-ui.css was not modified
+2024-05-19 04:59:00.828 +03:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2024-05-19 04:59:00.828 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-standalone-preset.js - - - 304 - text/javascript 2.7831ms
+2024-05-19 04:59:00.829 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui.css - - - 304 - text/css 2.8947ms
+2024-05-19 04:59:00.828 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-bundle.js - - - 304 - text/javascript 2.4238ms
+2024-05-19 04:59:01.001 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - -
+2024-05-19 04:59:01.005 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.7333ms
+2024-05-19 04:59:09.672 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/api/Address - -
+2024-05-19 04:59:09.678 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-19 04:59:09.684 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-19 04:59:09.749 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+2024-05-19 04:59:09.751 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-19 04:59:09.753 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 68.7182ms
+2024-05-19 04:59:09.753 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-19 04:59:09.753 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/api/Address - - - 200 - application/json;+charset=utf-8 80.9626ms
+2024-05-19 04:59:17.087 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/index.html - -
+2024-05-19 04:59:17.091 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/index.html - - - 200 - text/html;charset=utf-8 4.4913ms
+2024-05-19 04:59:17.104 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/_framework/aspnetcore-browser-refresh.js - -
+2024-05-19 04:59:17.105 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/_framework/aspnetcore-browser-refresh.js - - - 200 13732 application/javascript;+charset=utf-8 0.3677ms
+2024-05-19 04:59:17.106 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui.css - -
+2024-05-19 04:59:17.106 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-standalone-preset.js - -
+2024-05-19 04:59:17.106 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-bundle.js - -
+2024-05-19 04:59:17.106 +03:00 [INF] The file /swagger-ui.css was not modified
+2024-05-19 04:59:17.106 +03:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2024-05-19 04:59:17.106 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui.css - - - 304 - text/css 0.3292ms
+2024-05-19 04:59:17.106 +03:00 [INF] The file /swagger-ui-bundle.js was not modified
+2024-05-19 04:59:17.106 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-bundle.js - - - 304 - text/javascript 0.4377ms
+2024-05-19 04:59:17.106 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-standalone-preset.js - - - 304 - text/javascript 0.5841ms
+2024-05-19 04:59:17.307 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - -
+2024-05-19 04:59:17.311 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.8557ms
+2024-05-19 04:59:22.910 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/api/Address - -
+2024-05-19 04:59:22.918 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-19 04:59:22.925 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-19 04:59:22.950 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+2024-05-19 04:59:22.953 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-19 04:59:22.956 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 30.9256ms
+2024-05-19 04:59:22.956 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-19 04:59:22.956 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/api/Address - - - 200 - application/json;+charset=utf-8 46.1449ms
+2024-05-19 04:59:26.134 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/api/Address - -
+2024-05-19 04:59:26.138 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-19 04:59:26.138 +03:00 [INF] Route matched with {action = "GetItems", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItems() on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-19 04:59:26.147 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name]
+FROM [Addresses] AS [a]
+2024-05-19 04:59:26.148 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-19 04:59:26.149 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI) in 10.2774ms
+2024-05-19 04:59:26.149 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.GetItems (EcommerceAPI)'
+2024-05-19 04:59:26.149 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/api/Address - - - 200 - application/json;+charset=utf-8 14.5697ms
+2024-05-19 05:12:07.725 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/index.html - -
+2024-05-19 05:12:07.728 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/index.html - - - 200 - text/html;charset=utf-8 2.9798ms
+2024-05-19 05:12:07.766 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui.css - -
+2024-05-19 05:12:07.770 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-bundle.js - -
+2024-05-19 05:12:07.772 +03:00 [INF] The file /swagger-ui-bundle.js was not modified
+2024-05-19 05:12:07.772 +03:00 [INF] The file /swagger-ui.css was not modified
+2024-05-19 05:12:07.772 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-bundle.js - - - 304 - text/javascript 2.5331ms
+2024-05-19 05:12:07.772 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui.css - - - 304 - text/css 5.8927ms
+2024-05-19 05:12:07.775 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/_framework/aspnetcore-browser-refresh.js - -
+2024-05-19 05:12:07.776 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/_framework/aspnetcore-browser-refresh.js - - - 200 13732 application/javascript;+charset=utf-8 0.2237ms
+2024-05-19 05:12:07.776 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-standalone-preset.js - -
+2024-05-19 05:12:07.776 +03:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2024-05-19 05:12:07.776 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-standalone-preset.js - - - 304 - text/javascript 0.2191ms
+2024-05-19 05:12:08.428 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - -
+2024-05-19 05:12:08.438 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 9.5369ms
+2024-05-19 05:42:58.848 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-19 05:42:58.906 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-19 05:42:58.907 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-19 05:42:58.907 +03:00 [INF] Hosting environment: Development
+2024-05-19 05:42:58.907 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-19 05:42:58.969 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/index.html - -
+2024-05-19 05:42:59.024 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/index.html - - - 200 - text/html;charset=utf-8 55.9527ms
+2024-05-19 05:42:59.062 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-standalone-preset.js - -
+2024-05-19 05:42:59.062 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui.css - -
+2024-05-19 05:42:59.063 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/_framework/aspnetcore-browser-refresh.js - -
+2024-05-19 05:42:59.063 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-bundle.js - -
+2024-05-19 05:42:59.064 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/_framework/aspnetcore-browser-refresh.js - - - 200 13732 application/javascript;+charset=utf-8 1.0681ms
+2024-05-19 05:42:59.073 +03:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2024-05-19 05:42:59.073 +03:00 [INF] The file /swagger-ui-bundle.js was not modified
+2024-05-19 05:42:59.073 +03:00 [INF] The file /swagger-ui.css was not modified
+2024-05-19 05:42:59.073 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui.css - - - 304 - text/css 11.0003ms
+2024-05-19 05:42:59.074 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-standalone-preset.js - - - 304 - text/javascript 11.3062ms
+2024-05-19 05:42:59.074 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-bundle.js - - - 304 - text/javascript 10.7947ms
+2024-05-19 05:42:59.513 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - -
+2024-05-19 05:42:59.567 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 53.8486ms
+2024-05-19 05:43:06.537 +03:00 [INF] Application is shutting down...
+2024-05-19 15:04:24.498 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 15:04:24.578 +03:00 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 15:04:24.591 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 15:10:40.359 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 15:10:40.400 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 15:10:40.409 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 15:10:48.753 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 15:10:48.790 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 15:10:48.799 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 15:13:10.789 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 15:13:10.840 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 15:13:10.844 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 15:13:10.847 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 15:13:10.860 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 15:13:10.871 +03:00 [INF] Reverting migration '20240501051714_authMigratoin'.
+2024-05-19 15:13:11.032 +03:00 [INF] Executed DbCommand (115ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetRoleClaims];
+2024-05-19 15:13:11.039 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUserClaims];
+2024-05-19 15:13:11.043 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUserLogins];
+2024-05-19 15:13:11.051 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUserRoles];
+2024-05-19 15:13:11.055 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUserTokens];
+2024-05-19 15:13:11.062 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetRoles];
+2024-05-19 15:13:11.068 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [AspNetUsers];
+2024-05-19 15:13:11.156 +03:00 [INF] Executed DbCommand (88ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [__EFMigrationsHistory]
+WHERE [MigrationId] = N'20240501051714_authMigratoin';
+2024-05-19 15:13:59.455 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 15:13:59.508 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 15:13:59.519 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 15:14:06.085 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 15:14:06.123 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 15:14:06.132 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 15:15:06.971 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 15:15:07.013 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 15:15:07.016 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 15:15:07.018 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 15:15:07.030 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 15:15:07.038 +03:00 [INF] Reverting migration '20240418073531_IntialCreate'.
+2024-05-19 15:15:07.077 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [OrderItems];
+2024-05-19 15:15:07.085 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [Orders];
+2024-05-19 15:15:07.104 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [Products];
+2024-05-19 15:15:07.108 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [Addresses];
+2024-05-19 15:15:07.112 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [Brands];
+2024-05-19 15:15:07.117 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [Categories];
+2024-05-19 15:15:07.120 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [Units];
+2024-05-19 15:15:07.125 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [__EFMigrationsHistory]
+WHERE [MigrationId] = N'20240418073531_IntialCreate';
+2024-05-19 15:15:32.778 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 15:15:32.820 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 15:15:32.832 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 15:16:19.733 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 15:16:19.775 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 15:16:19.779 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 15:16:19.782 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 15:16:19.793 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 15:16:19.799 +03:00 [INF] Applying migration '20240519121607_InitalMigrations'.
+2024-05-19 15:20:49.068 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 15:20:49.109 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 15:20:49.111 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 15:20:49.114 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 15:20:49.124 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 15:20:49.131 +03:00 [INF] Applying migration '20240519121607_InitalMigrations'.
+2024-05-19 15:59:56.956 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 15:59:56.995 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 15:59:56.998 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 15:59:57.002 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 15:59:57.014 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 15:59:57.020 +03:00 [INF] No migrations were applied. The database is already up to date.
+2024-05-19 16:00:52.703 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 16:00:52.745 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 16:00:52.749 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 16:00:52.751 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 16:00:52.761 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 16:00:52.768 +03:00 [INF] Applying migration '20240519130036_InitalMigrations'.
+2024-05-19 16:00:52.898 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Addresses] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Addresses] PRIMARY KEY ([Id])
+);
+2024-05-19 16:00:52.902 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2024-05-19 16:00:52.905 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] nvarchar(450) NOT NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+2024-05-19 16:00:52.914 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [BaseEntity] (
+    [Id] uniqueidentifier NOT NULL,
+    [CreatedAt] datetime2 NOT NULL DEFAULT (GETDATE()),
+    [UpdatedAt] datetime2 NOT NULL DEFAULT (GETDATE()),
+    CONSTRAINT [PK_BaseEntity] PRIMARY KEY ([Id])
+);
+2024-05-19 16:00:52.919 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Brands] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Brands] PRIMARY KEY ([Id])
+);
+2024-05-19 16:00:52.923 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Categories] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    [Image] nvarchar(max) NOT NULL,
+    [Status] bit NOT NULL,
+    CONSTRAINT [PK_Categories] PRIMARY KEY ([Id])
+);
+2024-05-19 16:00:52.928 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Units] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Units] PRIMARY KEY ([Id])
+);
+2024-05-19 16:00:52.932 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Orders] (
+    [Id] uniqueidentifier NOT NULL,
+    [Serial] nvarchar(max) NOT NULL,
+    [Total] real NOT NULL,
+    [Status] int NOT NULL,
+    [Date] datetime2 NOT NULL,
+    [AddressId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_Orders] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Orders_Addresses_AddressId] FOREIGN KEY ([AddressId]) REFERENCES [Addresses] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 16:00:52.936 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 16:00:52.946 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 16:00:52.953 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 16:00:52.958 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] nvarchar(450) NOT NULL,
+    [RoleId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 16:00:52.963 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] nvarchar(450) NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 16:00:52.968 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    [Price] real NOT NULL,
+    [Image] nvarchar(max) NOT NULL,
+    [Status] bit NOT NULL,
+    [Special] bit NOT NULL,
+    [CategoryId] uniqueidentifier NOT NULL,
+    [BrandId] uniqueidentifier NOT NULL,
+    [UnitId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Products_Brands_BrandId] FOREIGN KEY ([BrandId]) REFERENCES [Brands] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Products_Categories_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [Categories] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Products_Units_UnitId] FOREIGN KEY ([UnitId]) REFERENCES [Units] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 16:00:52.973 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [OrderItems] (
+    [Id] uniqueidentifier NOT NULL,
+    [Count] int NOT NULL,
+    [Price] real NOT NULL,
+    [Orderid] uniqueidentifier NOT NULL,
+    [Productid] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_OrderItems] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_OrderItems_Orders_Orderid] FOREIGN KEY ([Orderid]) REFERENCES [Orders] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_OrderItems_Products_Productid] FOREIGN KEY ([Productid]) REFERENCES [Products] ([Id]) ON DELETE CASCADE
+);
+2024-05-19 16:00:52.993 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (N'813620DA-EB26-4F68-AFFA-A381D55171B0', N'813620DA-EB26-4F68-AFFA-A381D55171B0', N'Writer', N'WRITER'),
+(N'B136F701-C04F-41B0-B327-2AF20B283548', N'B136F701-C04F-41B0-B327-2AF20B283548', N'Reader', N'READER');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] OFF;
+2024-05-19 16:00:52.997 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetRoleClaims_RoleId] ON [AspNetRoleClaims] ([RoleId]);
+2024-05-19 16:00:53.022 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [RoleNameIndex] ON [AspNetRoles] ([NormalizedName]) WHERE [NormalizedName] IS NOT NULL;
+2024-05-19 16:00:53.026 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserClaims_UserId] ON [AspNetUserClaims] ([UserId]);
+2024-05-19 16:00:53.028 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserLogins_UserId] ON [AspNetUserLogins] ([UserId]);
+2024-05-19 16:00:53.030 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserRoles_RoleId] ON [AspNetUserRoles] ([RoleId]);
+2024-05-19 16:00:53.032 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [EmailIndex] ON [AspNetUsers] ([NormalizedEmail]);
+2024-05-19 16:00:53.034 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [UserNameIndex] ON [AspNetUsers] ([NormalizedUserName]) WHERE [NormalizedUserName] IS NOT NULL;
+2024-05-19 16:00:53.037 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_OrderItems_Orderid] ON [OrderItems] ([Orderid]);
+2024-05-19 16:00:53.040 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_OrderItems_Productid] ON [OrderItems] ([Productid]);
+2024-05-19 16:00:53.042 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Orders_AddressId] ON [Orders] ([AddressId]);
+2024-05-19 16:00:53.043 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Products_BrandId] ON [Products] ([BrandId]);
+2024-05-19 16:00:53.045 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Products_CategoryId] ON [Products] ([CategoryId]);
+2024-05-19 16:00:53.047 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Products_UnitId] ON [Products] ([UnitId]);
+2024-05-19 16:00:53.049 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240519130036_InitalMigrations', N'7.0.0');
+2024-05-19 16:03:27.851 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 16:03:27.891 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 16:03:27.895 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-19 16:03:27.897 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-19 16:03:27.910 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-19 16:03:27.918 +03:00 [INF] Applying migration '20240519130300_addCreatedOn'.
+2024-05-19 16:03:28.024 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Addresses] ADD [CreatedOn] datetime2 NOT NULL DEFAULT '0001-01-01T00:00:00.0000000';
+2024-05-19 16:03:28.027 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Addresses] ADD [UpdatedOn] datetime2 NOT NULL DEFAULT '0001-01-01T00:00:00.0000000';
+2024-05-19 16:03:28.035 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240519130300_addCreatedOn', N'7.0.0');
+2024-05-19 16:03:48.376 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-19 16:03:48.444 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-19 16:03:48.444 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-19 16:03:48.444 +03:00 [INF] Hosting environment: Development
+2024-05-19 16:03:48.444 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-19 16:03:58.870 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/ - -
+2024-05-19 16:03:58.892 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-05-19 16:03:58.936 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/ - - - 404 0 - 66.6247ms
+2024-05-19 16:04:04.764 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/index.html - -
+2024-05-19 16:04:04.805 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/index.html - - - 200 - text/html;charset=utf-8 41.1446ms
+2024-05-19 16:04:04.928 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - -
+2024-05-19 16:04:04.992 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 63.7300ms
+2024-05-19 16:04:24.545 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5187/api/Address?Name=Khartoum - 0
+2024-05-19 16:04:24.562 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.CreateUser (EcommerceAPI)'
+2024-05-19 16:04:24.586 +03:00 [INF] Route matched with {action = "CreateUser", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(EcommerceAPI.Models.Address) on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-19 16:04:24.721 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2024-05-19 16:04:24.725 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.CreateUser (EcommerceAPI) in 136.5035ms
+2024-05-19 16:04:24.727 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.CreateUser (EcommerceAPI)'
+2024-05-19 16:04:24.728 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5187/api/Address?Name=Khartoum - 0 - 400 - application/json;+charset=utf-8 182.3412ms
+2024-05-19 16:07:31.579 +03:00 [INF] Application is shutting down...
+2024-05-19 16:10:08.979 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-19 16:10:09.037 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-19 16:10:09.037 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-19 16:10:09.038 +03:00 [INF] Hosting environment: Development
+2024-05-19 16:10:09.038 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-19 16:10:09.498 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/index.html - -
+2024-05-19 16:10:09.566 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/index.html - - - 200 - text/html;charset=utf-8 69.4297ms
+2024-05-19 16:10:09.585 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/_framework/aspnetcore-browser-refresh.js - -
+2024-05-19 16:10:09.588 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/_framework/aspnetcore-browser-refresh.js - - - 200 13732 application/javascript;+charset=utf-8 2.4097ms
+2024-05-19 16:10:09.712 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - -
+2024-05-19 16:10:09.790 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 77.5606ms
+2024-05-19 16:10:28.329 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5187/api/Address?Name=Khartoum - 0
+2024-05-19 16:10:28.347 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-05-19 16:10:28.383 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.CreateUser (EcommerceAPI)'
+2024-05-19 16:10:28.394 +03:00 [INF] Route matched with {action = "CreateUser", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(EcommerceAPI.Data.Dto.AddressRequestDto) on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-19 16:10:29.242 +03:00 [INF] Executed DbCommand (49ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Addresses] ([Id], [CreatedOn], [Name], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3);
+2024-05-19 16:10:29.254 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-19 16:10:29.268 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.CreateUser (EcommerceAPI) in 872.7391ms
+2024-05-19 16:10:29.269 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.CreateUser (EcommerceAPI)'
+2024-05-19 16:10:29.271 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5187/api/Address?Name=Khartoum - 0 - 201 - application/json;+charset=utf-8 941.3536ms
+2024-05-19 16:10:42.929 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5187/api/Address?Name=Omdurman - 0
+2024-05-19 16:10:42.934 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.CreateUser (EcommerceAPI)'
+2024-05-19 16:10:42.935 +03:00 [INF] Route matched with {action = "CreateUser", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(EcommerceAPI.Data.Dto.AddressRequestDto) on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-19 16:10:42.989 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Addresses] ([Id], [CreatedOn], [Name], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3);
+2024-05-19 16:10:42.990 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-19 16:10:42.990 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.CreateUser (EcommerceAPI) in 55.3885ms
+2024-05-19 16:10:42.990 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.CreateUser (EcommerceAPI)'
+2024-05-19 16:10:42.991 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5187/api/Address?Name=Omdurman - 0 - 201 - application/json;+charset=utf-8 61.1701ms
+2024-05-19 16:15:28.665 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/index.html - -
+2024-05-19 16:15:28.671 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/index.html - - - 200 - text/html;charset=utf-8 6.3946ms
+2024-05-19 16:15:28.679 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui.css - -
+2024-05-19 16:15:28.694 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-05-19 16:15:28.695 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui.css - - - 200 144929 text/css 15.8772ms
+2024-05-19 16:15:28.742 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-standalone-preset.js - -
+2024-05-19 16:15:28.742 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-bundle.js - -
+2024-05-19 16:15:28.742 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/_framework/aspnetcore-browser-refresh.js - -
+2024-05-19 16:15:28.742 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/_framework/aspnetcore-browser-refresh.js - - - 200 13732 application/javascript;+charset=utf-8 0.2837ms
+2024-05-19 16:15:28.744 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-05-19 16:15:28.744 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 2.6962ms
+2024-05-19 16:15:28.747 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-05-19 16:15:28.747 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 5.1575ms
+2024-05-19 16:15:28.855 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - -
+2024-05-19 16:15:28.866 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11.3847ms
+2024-05-19 18:57:27.261 +03:00 [INF] Application is shutting down...
+2024-05-19 18:59:36.409 +03:00 [INF] User profile is available. Using '/Users/amroboney/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-05-19 18:59:36.468 +03:00 [INF] Now listening on: http://localhost:5187
+2024-05-19 18:59:36.469 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-19 18:59:36.469 +03:00 [INF] Hosting environment: Development
+2024-05-19 18:59:36.469 +03:00 [INF] Content root path: /Users/amroboney/Projects/Ecommerce/EcommerceAPI
+2024-05-19 18:59:41.598 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/index.html - -
+2024-05-19 18:59:41.653 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/index.html - - - 200 - text/html;charset=utf-8 57.1120ms
+2024-05-19 18:59:41.790 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - -
+2024-05-19 18:59:41.796 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/apple-touch-icon-precomposed.png - -
+2024-05-19 18:59:41.801 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-05-19 18:59:41.821 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/apple-touch-icon-precomposed.png - - - 404 0 - 25.1656ms
+2024-05-19 18:59:41.822 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5187/apple-touch-icon.png - -
+2024-05-19 18:59:41.822 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/apple-touch-icon.png - - - 404 0 - 0.5285ms
+2024-05-19 18:59:41.850 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 60.3175ms
+2024-05-19 18:59:47.077 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5187/api/Address - 0
+2024-05-19 18:59:47.089 +03:00 [INF] Executing endpoint 'EcommerceAPI.Controllers.AddressController.CreateUser (EcommerceAPI)'
+2024-05-19 18:59:47.107 +03:00 [INF] Route matched with {action = "CreateUser", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(EcommerceAPI.Data.Dto.AddressRequestDto) on controller EcommerceAPI.Controllers.AddressController (EcommerceAPI).
+2024-05-19 18:59:47.223 +03:00 [INF] Executing OkObjectResult, writing value of type 'EcommerceAPI.Models.ResponseModel'.
+2024-05-19 18:59:47.229 +03:00 [INF] Executed action EcommerceAPI.Controllers.AddressController.CreateUser (EcommerceAPI) in 121.3361ms
+2024-05-19 18:59:47.230 +03:00 [INF] Executed endpoint 'EcommerceAPI.Controllers.AddressController.CreateUser (EcommerceAPI)'
+2024-05-19 18:59:47.231 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5187/api/Address - 0 - 200 - application/json;+charset=utf-8 154.2047ms
+2024-05-19 19:22:36.656 +03:00 [INF] Application is shutting down...
