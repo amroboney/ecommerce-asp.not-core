@@ -180,3 +180,4 @@ Z:/Projects/Ecommerce/EcommerceAPI/obj/Debug/net7.0/scopedcss/bundle/EcommerceAP
 Z:/Projects/Ecommerce/EcommerceAPI/obj/Debug/net7.0/Ecommerc.C58B2BB1.Up2Date
 Z:/Projects/Ecommerce/EcommerceAPI/obj/Debug/net7.0/EcommerceAPI.genruntimeconfig.cache
 Z:/Projects/Ecommerce/EcommerceAPI/obj/Debug/net7.0/ref/EcommerceAPI.dll
+/Users/amroboney/Projects/Ecommerce/EcommerceAPI/obj/Debug/net7.0/EcommerceAPI.sourcelink.json

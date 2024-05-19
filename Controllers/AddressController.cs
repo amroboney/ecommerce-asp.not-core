@@ -47,7 +47,7 @@ namespace EcommerceAPI.Controllers
             if (!validationResult.IsValid)
             {
                 // prepare response
-                var validationErrorResponse = ResponseApi.Success($"input errors", validationResult.Errors);
+                var validationErrorResponse = ResponseApi.Faild(102 ,$"input errors", validationResult.Errors);
                 return Ok(validationErrorResponse);
                 // Validation failed, return error messages
                 return BadRequest(validationResult.Errors);

@@ -23,6 +23,8 @@ namespace EcommerceAPI.Repository
 
         public ICategoryRepository Category => new CategoryRepository(_context);
 
+        public IUnitRepository Unit => new UnitRepository(_context);
+        
         //public IResponseRepository Response => new ResponseRepository();
 
         //public IFileRepository FileService { get; private set; }

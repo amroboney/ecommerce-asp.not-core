@@ -34,6 +34,8 @@ namespace EcommerceAPI.Installers
 
             #region Validation
             service.AddTransient<IValidator<AddressRequestDto>, AddressValidation>();
+            service.AddTransient<IValidator<ProductRequestDto>, ProductValidation>();
+            service.AddTransient<IValidator<UnitRequestDto>, UnitValidation>();
             #endregion
 
         }

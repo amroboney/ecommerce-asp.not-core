@@ -15,6 +15,7 @@ namespace EcommerceAPI.Halper
 			CreateMap<CreateBrandDto, Brand>().ReverseMap();
 			CreateMap<BrandDto, CreateBrandDto>().ReverseMap();
 			CreateMap<CategoryDto, Category>().ReverseMap();
+			CreateMap<UnitRequestDto, Unit>().ReverseMap();
 		}
 	}
 }

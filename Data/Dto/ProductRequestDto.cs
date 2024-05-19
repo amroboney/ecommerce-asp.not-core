@@ -10,6 +10,7 @@ namespace EcommerceAPI.Data.Dto
         
         public string Name { get; set; }
         public float Price { get; set; }
+        public string Image { get; set; }
         public IFormFile ImageFile { get; set; }
         public Guid CategoryId { get; set; }
         public Guid BrandId { get; set; }

@@ -16,6 +16,7 @@ namespace EcommerceAPI.Interfaces
 
         ICategoryRepository Category{ get; }
 
+        IUnitRepository Unit { get; }
         //IResponseRepository Response { get; }
 
         //IFileRepository FileService { get; }
